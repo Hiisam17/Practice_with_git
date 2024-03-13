@@ -59,7 +59,7 @@ string getAnswer(int number, int randomNumber) {
     }
     else if (number < randomNumber)
     {
-        answer = "Your name is lower.";
+        answer = "Your number is lower.";
     }
     else if (number == randomNumber)
     {
