@@ -79,7 +79,7 @@ string getAnswer(int number, int randomNumber) {
 bool checkSuccess(string answer) {
     // TODO: return the result after checking that player guessed right or wrong
     if (answer == "Your number is higher.") return false;
-    else if (answer == "Your name is lower.") return false;
+    else if (answer == "Your number is lower.") return false;
     
     return true;
 }
