@@ -179,19 +179,20 @@ void processData(const char ch, const string& word,
     {
         if (word[i] == ch)
         {
-            updateSecretWord ( secretWord, ch, word );
-            if (i == word.size() - 1)
-            {
-                check = true;
-                updateEnteredChars( ch, correctChars );
-            }
+            check = true;
+            break;
         }
     }
-    if (check == false)
+    if (check == true)
+    {
+        updateSecretWord ( secretWord, ch, word );
+        updateEnteredChars( ch, correctChars );
+    }
+    else if (check == false)
     {
         updateIncorrectGuess( incorrectGuess );
         updateEnteredChars ( ch, incorrectChars );
     }
 }
-//
+
 
