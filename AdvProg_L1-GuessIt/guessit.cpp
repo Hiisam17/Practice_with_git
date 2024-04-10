@@ -59,7 +59,7 @@ string getAnswer(int number, int randomNumber) {
     }
     else if (number < randomNumber)
     {
-        answer = "Your name is lower.";
+        answer = "Your number is lower.";
     }
     else if (number == randomNumber)
     {
@@ -79,7 +79,7 @@ string getAnswer(int number, int randomNumber) {
 bool checkSuccess(string answer) {
     // TODO: return the result after checking that player guessed right or wrong
     if (answer == "Your number is higher.") return false;
-    else if (answer == "Your name is lower.") return false;
+    else if (answer == "Your number is lower.") return false;
     
     return true;
 }
@@ -95,7 +95,7 @@ bool checkContinuePlaying(char isContinued) {
     // TODO: return result after checking player continue playing or not
     bool result = false;
 
-    if (isContinued == 'Y') result = true;
+    if (isContinued == 'Y' || isContinued == 'y') result = true;
 
     return result;
 }
@@ -138,3 +138,5 @@ int run() {
     } while (checkContinuePlaying(isContinued));
     return 0;
 }
+//Test01
+//Test02

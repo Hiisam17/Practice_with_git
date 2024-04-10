@@ -6,6 +6,7 @@
 #include <vector>
 #include <stdexcept>
 #include <algorithm>
+#include <cctype>
 
 
 using std::string;
